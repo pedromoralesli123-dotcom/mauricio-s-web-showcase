@@ -85,7 +85,6 @@ export function ProjectsSection() {
 
   return (
     <section id="projects" className="py-24 relative">
-      <div className="absolute inset-0 circuit-pattern opacity-20" />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
