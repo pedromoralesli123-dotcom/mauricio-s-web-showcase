@@ -22,6 +22,7 @@ interface Translations {
     experience: string;
     projects: string;
     technologies: string;
+    workedAt: string;
   };
   skills: {
     title: string;
@@ -69,6 +70,7 @@ const translations: Record<Language, Translations> = {
       experience: 'Años de Experiencia',
       projects: 'Proyectos Completados',
       technologies: 'Tecnologías Dominadas',
+      workedAt: 'Empresas donde he trabajado',
     },
     skills: {
       title: 'Habilidades',
@@ -114,6 +116,7 @@ const translations: Record<Language, Translations> = {
       experience: 'Years of Experience',
       projects: 'Projects Completed',
       technologies: 'Technologies Mastered',
+      workedAt: 'Companies I have worked with',
     },
     skills: {
       title: 'Skills',

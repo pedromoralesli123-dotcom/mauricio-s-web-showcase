@@ -128,6 +128,17 @@
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
 
+  .bg-gradient-main {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--background)) 0%,
+      hsl(var(--surface)) 25%,
+      hsl(var(--background)) 50%,
+      hsl(var(--surface)) 75%,
+      hsl(var(--background)) 100%
+    );
+  }
+
   .glow {
     box-shadow: 0 0 40px -10px hsl(var(--glow) / 0.4);
   }

@@ -1,6 +1,14 @@
 import { Code2, Briefcase, Zap } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
+// Company logos - using placeholder SVGs (replace with actual logos)
+const companies = [
+  { name: 'Google', logo: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg' },
+  { name: 'Microsoft', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg' },
+  { name: 'Amazon', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg' },
+  { name: 'Meta', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg' },
+];
+
 export function AboutSection() {
   const { t } = useLanguage();
 
@@ -12,8 +20,6 @@ export function AboutSection() {
 
   return (
     <section id="about" className="py-24 relative">
-      <div className="absolute inset-0 grid-pattern opacity-20" />
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -57,9 +63,30 @@ export function AboutSection() {
                 <span className="text-gradient">{t.about.title}</span>
               </h2>
               
-              <p className="text-lg text-muted-foreground leading-relaxed mb-10">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 {t.about.description}
               </p>
+
+              {/* Company Logos */}
+              <div className="mb-8">
+                <p className="text-sm text-muted-foreground mb-4 font-mono">
+                  {'// '}{t.about.workedAt || 'Empresas donde he trabajado'}
+                </p>
+                <div className="flex flex-wrap items-center gap-6">
+                  {companies.map((company) => (
+                    <div
+                      key={company.name}
+                      className="h-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                    >
+                      <img
+                        src={company.logo}
+                        alt={company.name}
+                        className="h-full w-auto object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4">
