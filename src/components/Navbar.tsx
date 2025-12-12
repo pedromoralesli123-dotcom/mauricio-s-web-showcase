@@ -13,6 +13,7 @@ export function Navbar() {
     { href: '#about', label: t.nav.about },
     { href: '#skills', label: t.nav.skills },
     { href: '#projects', label: t.nav.projects },
+    { href: '#certifications', label: t.nav.certifications },
     { href: '#contact', label: t.nav.contact },
   ];
 

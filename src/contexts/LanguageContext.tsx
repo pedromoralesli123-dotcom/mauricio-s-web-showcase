@@ -7,6 +7,7 @@ interface Translations {
     about: string;
     skills: string;
     projects: string;
+    certifications: string;
     contact: string;
   };
   hero: {
@@ -34,6 +35,12 @@ interface Translations {
     viewProject: string;
     viewCode: string;
   };
+  certifications: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    viewCredential: string;
+  };
   contact: {
     title: string;
     subtitle: string;
@@ -55,6 +62,7 @@ const translations: Record<Language, Translations> = {
       about: 'Sobre Mí',
       skills: 'Habilidades',
       projects: 'Proyectos',
+      certifications: 'Certificaciones',
       contact: 'Contacto',
     },
     hero: {
@@ -82,6 +90,12 @@ const translations: Record<Language, Translations> = {
       viewProject: 'Ver Proyecto',
       viewCode: 'Ver Código',
     },
+    certifications: {
+      badge: 'Credenciales Verificadas',
+      title: 'Certificaciones',
+      subtitle: 'Certificaciones profesionales que validan mi experiencia y conocimientos',
+      viewCredential: 'Ver credencial',
+    },
     contact: {
       title: 'Contacto',
       subtitle: '¿Tienes un proyecto en mente? ¡Hablemos!',
@@ -101,6 +115,7 @@ const translations: Record<Language, Translations> = {
       about: 'About',
       skills: 'Skills',
       projects: 'Projects',
+      certifications: 'Certifications',
       contact: 'Contact',
     },
     hero: {
@@ -127,6 +142,12 @@ const translations: Record<Language, Translations> = {
       subtitle: 'A selection of my most recent work',
       viewProject: 'View Project',
       viewCode: 'View Code',
+    },
+    certifications: {
+      badge: 'Verified Credentials',
+      title: 'Certifications',
+      subtitle: 'Professional certifications that validate my expertise and knowledge',
+      viewCredential: 'View credential',
     },
     contact: {
       title: 'Contact',
