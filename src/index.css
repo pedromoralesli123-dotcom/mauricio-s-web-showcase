@@ -160,13 +160,57 @@
 }
 
 @layer utilities {
-  .font-mono {
-    font-family: 'JetBrains Mono', monospace;
-  }
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
 
-  .font-sans {
-    font-family: 'Inter', sans-serif;
-  }
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Tech Badge Glow Effects */
+.tech-badge {
+  @apply transition-all duration-300 ease-out cursor-pointer;
+}
+
+.tech-badge:hover {
+  transform: scale(1.15);
+}
+
+/* Programming Languages */
+.glow-javascript:hover { filter: drop-shadow(0 0 12px #F7DF1E) drop-shadow(0 0 20px #F7DF1E40); }
+.glow-typescript:hover { filter: drop-shadow(0 0 12px #3178C6) drop-shadow(0 0 20px #3178C640); }
+.glow-python:hover { filter: drop-shadow(0 0 12px #306998) drop-shadow(0 0 20px #30699840); }
+.glow-java:hover { filter: drop-shadow(0 0 12px #007396) drop-shadow(0 0 20px #00739640); }
+.glow-csharp:hover { filter: drop-shadow(0 0 12px #68217A) drop-shadow(0 0 20px #68217A40); }
+.glow-html:hover { filter: drop-shadow(0 0 12px #E44D26) drop-shadow(0 0 20px #E44D2640); }
+.glow-css:hover { filter: drop-shadow(0 0 12px #1572B6) drop-shadow(0 0 20px #1572B640); }
+
+/* Frameworks & Libraries */
+.glow-react:hover { filter: drop-shadow(0 0 12px #61DAFB) drop-shadow(0 0 20px #61DAFB40); }
+.glow-angular:hover { filter: drop-shadow(0 0 12px #DD1B16) drop-shadow(0 0 20px #DD1B1640); }
+.glow-vue:hover { filter: drop-shadow(0 0 12px #4FC08D) drop-shadow(0 0 20px #4FC08D40); }
+.glow-nextjs:hover { filter: drop-shadow(0 0 12px #ffffff) drop-shadow(0 0 20px #ffffff40); }
+.glow-tailwind:hover { filter: drop-shadow(0 0 12px #38BDF8) drop-shadow(0 0 20px #38BDF840); }
+.glow-nodejs:hover { filter: drop-shadow(0 0 12px #339933) drop-shadow(0 0 20px #33993340); }
+.glow-spring:hover { filter: drop-shadow(0 0 12px #6DB33F) drop-shadow(0 0 20px #6DB33F40); }
+.glow-dotnet:hover { filter: drop-shadow(0 0 12px #512BD4) drop-shadow(0 0 20px #512BD440); }
+
+/* Databases */
+.glow-postgresql:hover { filter: drop-shadow(0 0 12px #336791) drop-shadow(0 0 20px #33679140); }
+.glow-mongodb:hover { filter: drop-shadow(0 0 12px #47A248) drop-shadow(0 0 20px #47A24840); }
+.glow-mysql:hover { filter: drop-shadow(0 0 12px #4479A1) drop-shadow(0 0 20px #4479A140); }
+.glow-redis:hover { filter: drop-shadow(0 0 12px #DC382D) drop-shadow(0 0 20px #DC382D40); }
+
+/* DevOps & Tools */
+.glow-docker:hover { filter: drop-shadow(0 0 12px #2496ED) drop-shadow(0 0 20px #2496ED40); }
+.glow-aws:hover { filter: drop-shadow(0 0 12px #FF9900) drop-shadow(0 0 20px #FF990040); }
+.glow-git:hover { filter: drop-shadow(0 0 12px #F05032) drop-shadow(0 0 20px #F0503240); }
+.glow-linux:hover { filter: drop-shadow(0 0 12px #FCC624) drop-shadow(0 0 20px #FCC62440); }
+.glow-graphql:hover { filter: drop-shadow(0 0 12px #E10098) drop-shadow(0 0 20px #E1009840); }
+.glow-firebase:hover { filter: drop-shadow(0 0 12px #FFCA28) drop-shadow(0 0 20px #FFCA2840); }
+.glow-kubernetes:hover { filter: drop-shadow(0 0 12px #326CE5) drop-shadow(0 0 20px #326CE540); }
+.glow-vscode:hover { filter: drop-shadow(0 0 12px #007ACC) drop-shadow(0 0 20px #007ACC40); }
 
   .animate-float {
     animation: float 6s ease-in-out infinite;
